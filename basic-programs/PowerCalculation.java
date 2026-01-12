@@ -1,10 +1,14 @@
-import java.util.*;
+import java.util.Scanner;
 public class PowerCalculation{
+   static scanner sc = new scanner(System.in);
+  public static void perimeter(){
+    System.out.println("Enter the base:");
+    double b = sc.nextDouble();
+    System.out.println("Enter the exponenet:");
+    int e = sc.nextInt();
+    Double v= Maths.pow(b,e);
+    System.out.println("The value is:"+v);
+  }
   public static void main(String[] args){
-  Scanner sc =  new Scanner(System.in);
-  int base= sc.nextInt();
-  int exponent= sc.nextInt();
-  double Power = base * exponent;
-  System.out.println(Power);
   }
 }
